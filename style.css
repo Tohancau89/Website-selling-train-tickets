@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;  /* Ensure vertical alignment */
+    padding: 20px 40px;   /* Adjust padding for space around header */
+    background-color: white;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo h1 {
+    font-size: 24px;
+    color: black;
+}
+
+.logo .highlight {
+    color: #ff8800;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    margin-right: 20px;  /* Spacing between links */
+    font-weight: bold;
+}
+
+nav a.cta {
+    background-color: #ff8800;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: white;
+}
+
+/* Additional styling for sections and the ticket-list */
+.banner {
+    background-image: url('train-bridge.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner-text h2 {
+    color: white;
+    font-size: 36px;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.search-form {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    background-color: white;
+}
+
+form {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+form label {
+    font-weight: bold;
+}
+
+form input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    padding: 10px 20px;
+    background-color: #ff8800;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.ticket-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px;
+    background-color: #f8f8f8;
+}
+
+.ticket-card {
+    background-color: #2daaff;
+    color: white;
+    border-radius: 10px;
+    padding: 20px;
+    width: 150px;
+    text-align: center;
+    margin: 10px;
+}
+
+.ticket-card h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.ticket-card p {
+    margin: 5px 0;
+}
