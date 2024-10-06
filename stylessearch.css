@@ -340,3 +340,41 @@ body.fb_hidden {
 .fb_iframe_widget_lift iframe {
     position: absolute;
 }
+
+.small-blue {
+    color: #3366FF;          /* Màu chữ xanh dương */
+    font-size: 12px;     /* Kích thước chữ nhỏ */
+}
+@media screen and (min-width: 768px) {
+    .trainpal .two-row-stack .left-search-list, .trainpal .two-row-stack .right-search-list {
+        border-radius: 12px;
+        overflow: hidden;
+    }
+}
+.mx-h5-m-24-16 {
+    background-color: #ffffff; /* White background */
+    padding: 20px; /* Add some padding */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.tablet\:mx-0 {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.md\:mb-8 {
+    margin-bottom: 32px; /* Adjust margin for medium screens */
+}
+
+.mt-12 {
+    margin-top: 48px; /* Adjust top margin */
+}
+
+.mt {
+    margin-top: 16px; /* Default top margin */
+}
+
+.doubleRow {
+    line-height: 2; /* Adjust line height for double spacing */
+}
