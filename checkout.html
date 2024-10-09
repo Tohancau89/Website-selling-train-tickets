@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Train Ticket</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f6fa;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 80%;
+            margin: 50px auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        header .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #0044cc;
+        }
+        header nav {
+            font-size: 14px;
+        }
+        header nav a {
+            margin-left: 20px;
+            color: #666;
+            text-decoration: none;
+        }
+        .sign-in {
+            text-align: center;
+            padding: 15px;
+            background-color: #fff8f0;
+            border: 1px solid #f7c7a1;
+            color: #f15a24;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            font-size: 16px;
+        }
+        .ticket-options {
+            display: flex;
+            justify-content: space-between;
+        }
+        .ticket-options .ticket-info {
+            width: 60%;
+        }
+        .ticket-options .ticket-info h3 {
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+        .ticket-options .ticket {
+            background-color: #f5f6fa;
+            border: 1px solid #e0e0e0;
+            border-radius: 5px;
+            padding: 20px;
+            margin-bottom: 15px;
+        }
+        .ticket label {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 16px;
+        }
+        .ticket label span {
+            color: #666;
+        }
+        .ticket input {
+            margin-right: 10px;
+        }
+        .highlight {
+            background-color: #f0f9ff;
+            border: 1px solid #99d6ff;
+        }
+        .highlight .save {
+            color: #f15a24;
+            font-weight: bold;
+        }
+        .ticket-summary {
+            width: 35%;
+            background-color: #f5f6fa;
+            border-radius: 5px;
+            padding: 20px;
+        }
+        .ticket-summary h3 {
+            margin-bottom: 15px;
+        }
+        .ticket-summary .summary-item {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+            font-size: 16px;
+        }
+        .summary-item .discount {
+            color: #f15a24;
+        }
+        .total {
+            font-size: 24px;
+            font-weight: bold;
+            color: #0044cc;
+            text-align: center;
+            margin: 20px 0;
+        }
+        .continue-btn {
+            background-color: #0044cc;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            display: block;
+        }
+        .green-box {
+            text-align: center;
+            background-color: #e0f7e9;
+            color: #006600;
+            border-radius: 5px;
+            padding: 10px;
+            font-size: 14px;
+            margin-top: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">TRAINPAL</div>
+            <nav>
+                <a href="#">Railcards</a>
+                <a href="#">Help</a>
+                <a href="#">My bookings</a>
+                <a href="login.html"><button>Sign in</button></a>
+            </nav>
+        </header>
+
+        <div class="sign-in">
+            <strong>Sign In</strong> to claim your <strong>2% off</strong> Welcome Pack and faster bookings
+        </div>
+
+        <div class="ticket-options">
+            <div class="ticket-info">
+                <h3>Original Ticket Fare</h3>
+                <div class="ticket">
+                    <label>
+                        <input type="radio" name="ticket" />
+                        £184.70 <span>06:29 → 08:45, direct</span>
+                    </label>
+                </div>
+                <div class="ticket highlight">
+                    <label>
+                        <input type="radio" name="ticket" checked />
+                        £125.20 <span>06:29 → 08:45, direct</span>
+                    </label>
+                    <div class="save">Save £59.50</div>
+                </div>
+                <div class="ticket">
+                    <label>
+                        <input type="radio" name="ticket" />
+                        £75.00 <span>12:13 → 14:19, direct</span>
+                    </label>
+                    <div class="save">Save £109.70</div>
+                </div>
+            </div>
+
+            <div class="ticket-summary">
+                <h3>Summary</h3>
+                <div class="summary-item">
+                    <span>Ticket price</span> <span>£184.70</span>
+                </div>
+                <div class="summary-item">
+                    <span>Booking fee</span> <span>£0.00</span>
+                </div>
+                <div class="summary-item">
+                    <span>Split service fee</span> <span>£0.00</span>
+                </div>
+                <div class="summary-item">
+                    <span>Split Ticket</span> <span class="discount">-£59.50</span>
+                </div>
+
+                <div class="total">£125.20</div>
+                <div class="continue-btn">Continue</div>
+
+                <div class="green-box">Saves 31.55kg CO2 compared to driving.</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
