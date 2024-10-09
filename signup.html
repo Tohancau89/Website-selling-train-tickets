@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Form</title>
+    <link rel="stylesheet" href="signup.css">
+</head>
+<body>
+    <div class="register-container">
+        <h2>Tạo tài khoản mới</h2>
+        <p>Nhanh chóng và dễ dàng.</p>
+        <form class="register-form">
+            <div class="name-fields">
+                <input type="text" placeholder="Họ" required>
+                <input type="text" placeholder="Tên" required>
+            </div>
+            <div class="birth-date">
+                <label for="birth-date">Ngày sinh</label>
+                <div class="date-select">
+                    <select id="day" required>
+                        <!-- Example day options -->
+                        <option value="8">8</option>
+                    </select>
+                    <select id="month" required>
+                        <!-- Example month options -->
+                        <option value="10">Tháng 10</option>
+                    </select>
+                    <select id="year" required>
+                        <!-- Example year options -->
+                        <option value="2024">2024</option>
+                    </select>
+                </div>
+            </div>
+            <div class="gender">
+                <label for="gender">Giới tính</label>
+                <div class="gender-options">
+                    <input type="radio" id="female" name="gender" value="female" required>
+                    <label for="female">Nữ</label>
+                    <input type="radio" id="male" name="gender" value="male">
+                    <label for="male">Nam</label>
+                    <input type="radio" id="custom" name="gender" value="custom">
+                    <label for="custom">Tùy chỉnh</label>
+                </div>
+            </div>
+            <input type="text" placeholder="Số di động hoặc email" required>
+            <input type="password" placeholder="Mật khẩu mới" required>
+            <p class="policy-text">
+                Những người dùng dịch vụ của chúng tôi có thể đã tải thông tin liên hệ của bạn lên Facebook. Tìm hiểu thêm.
+                Bằng cách nhấp vào Đăng ký, bạn đồng ý với Điều khoản, Chính sách quyền riêng tư và Chính sách cookie của chúng tôi. Bạn có thể nhận được thông báo của chúng tôi qua SMS và hủy nhận bất kỳ lúc nào.
+            </p>
+            <button type="submit">Đăng ký</button>
+            <a href="login.html" class="existing-account">Bạn đã có tài khoản ư?</a>
+        </form>
+    </div>
+</body>
+</html>
