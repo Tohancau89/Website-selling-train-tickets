@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Phenikaa Selling ticket</title>
+    <title>Phenikaa Selling Ticket</title>
     <link rel="stylesheet" href="homepage.css">
 </head>
 <body>
-    <header >
+    <header>
         <div class="logo">
             <h1>Phenikaa<span class="highlight">TicketTrain</span></h1>
             <nav>
@@ -16,7 +16,6 @@
                 <a href="#" class="cta">Sell a ticket</a>
             </nav>
         </div>
-        
     </header>
 
     <section class="banner">
@@ -27,54 +26,61 @@
 
     <section class="search-form">
         <form>
-            <label for="depart">Départ Train</label>
-            <input type="text" id="depart" placeholder="Paris">
-
-            <label for="arrive">Arrivée Train</label>
-            <input type="text" id="arrive" placeholder="London">
-
-            <label for="date">Date *</label>
-            <input type="date" id="date" value="2024-10-06">
-
-            <button type="submit">RECHERCHER</button>
+            <div class="form-group">
+                <label for="depart">Départ Train</label>
+                <input type="text" id="depart" placeholder="Paris">
+            </div>
+            <div class="form-group">
+                <label for="arrive">Arrivée Train</label>
+                <input type="text" id="arrive" placeholder="London">
+            </div>
+            <div class="form-group">
+                <label for="date">Date *</label>
+                <input type="date" id="date" value="2024-10-06">
+            </div>
+            <button type="submit" class="search-btn">RECHERCHER</button>
         </form>
     </section>
 
     <section class="ticket-list">
         <div class="ticket-card">
-            <h3>8 October</h3>
-            <p>Marseille ➡️ Paris</p>
-            <p>08:00 ➡️ 11:16</p>
-            <p>27.500vnd</p>
-            <p>Di chuyen trong 5h</p>
+            <div class="date">8 October</div>
+            <div class="route">HaNoi ➡️ DaNang</div>
+            <div class="time">08:00 ➡️ 11:16</div>
+            <div class="price">27.500 VND</div>
+            <div class="duration">Di chuyển trong 5h</div>
         </div>
+
         <div class="ticket-card">
-            <h3>7 October</h3>
-            <p>Paris ➡️ Valence</p>
-            <p>19:42 ➡️ 21:54</p>
-            <p>150.000vnd</p>
-            <p>Di chuyen trong 1h30p</p>
+            <div class="date">7 October</div>
+            <div class="route">CamGiang ➡️ LongBien</div>
+            <div class="time">19:42 ➡️ 21:54</div>
+            <div class="price">150.000 VND</div>
+            <div class="duration">Di chuyển trong 1h30p</div>
         </div>
+
         <div class="ticket-card">
-            <h3>6 October</h3>
-            <p>Paris ➡️ Marseille</p>
-            <p>09:10 ➡️ 12:14</p>
-            <p>50.000vnd</p>
-            <p>Di chuyen trong 4h</p>
+            <div class="date">6 October</div>
+            <div class="route">LongBien ➡️ HaiPhong</div>
+            <div class="time">09:10 ➡️ 12:14</div>
+            <div class="price">50.000 VND</div>
+            <div class="duration">Di chuyển trong 4h</div>
         </div>
+
         <div class="ticket-card">
-            <h3>9 October</h3>
-            <p>Marseille ➡️ Paris</p>
-            <p>17:32 ➡️ 20:52</p>
-            <p>83.868vnd</p>
-            <p>HaNoi trong 3 h</p>
+            <div class="date">9 October</div>
+            <div class="route">Hue ➡️ HCM</div>
+            <div class="time">17:32 ➡️ 20:52</div>
+            <div class="price">83.868 VND</div>
+            <div class="duration">Hà Nội trong 3h</div>
         </div>
+
         <div class="ticket-card">
-            <h3>18 October</h3>
-            <p>Paris ➡️ Bruxelles</p>
-            <p>17:23 ➡️ 18:47</p>
-            <p>75.000vnd</p>
-            <p>Di chuyen trong 2h</p>
+            <div class="date">18 October</div>
+            <div class="route">HCM ➡️ HaNoi</div>
+            <div class="time">17:23 ➡️ 18:47</div>
+            <div class="price">75.000 VND</div>
+            <div class="duration">Di chuyển trong 2h</div>
         </div>
     </section>
 </body>
