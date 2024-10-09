@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+header .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #FF6F00;
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+}
+
+header nav ul li {
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+header nav ul li a.sell-ticket {
+    background-color: #FF6F00;
+    padding: 10px 20px;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.hero {
+    background: url('train-bridge.jpg') no-repeat center center/cover;
+    height: 300px;
+    position: relative;
+}
+
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    color: #fff;
+    text-align: center;
+}
+
+.hero-content h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.search-bar {
+    display: flex;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.search-bar .form-group {
+    margin-right: 20px;
+}
+
+.search-bar .form-group label {
+    display: block;
+    font-weight: bold;
+}
+
+.search-bar .form-group input {
+    padding: 10px;
+    width: 150px;
+}
+
+.search-btn {
+    background-color: #FF6F00;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.ticket-list {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.ticket-card {
+    background-color: #00aaff;
+    color: #fff;
+    width: 150px;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.ticket-card .date {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.ticket-card .route {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.ticket-card .price {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.ticket-card .published {
+    font-size: 12px;
+}
