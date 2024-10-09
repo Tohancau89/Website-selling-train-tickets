@@ -17,74 +17,77 @@ header {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-header .logo {
+header .logo h1 {
     font-size: 24px;
     font-weight: bold;
+}
+
+header .logo .highlight {
     color: #FF6F00;
 }
 
-header nav ul {
+header nav {
     display: flex;
-    list-style: none;
 }
 
-header nav ul li {
+header nav a {
     margin-left: 20px;
-}
-
-header nav ul li a {
     text-decoration: none;
     color: #333;
     font-weight: bold;
 }
 
-header nav ul li a.sell-ticket {
+header nav a.cta {
     background-color: #FF6F00;
     padding: 10px 20px;
     color: #fff;
     border-radius: 5px;
 }
 
-.hero {
+.banner {
     background: url('train-bridge.jpg') no-repeat center center/cover;
-    height: 300px;
-    position: relative;
-}
-
-.hero-content {
+    height: 250px;
     display: flex;
-    flex-direction: column;
-    align-items: center;
     justify-content: center;
-    height: 100%;
-    color: #fff;
-    text-align: center;
+    align-items: center;
 }
 
-.hero-content h1 {
+.banner-text h2 {
+    color: white;
     font-size: 36px;
-    margin-bottom: 20px;
 }
 
-.search-bar {
+.search-form {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    background-color: #f7f7f7;
+    margin: 20px 0;
+}
+
+.search-form form {
     display: flex;
     background-color: #fff;
     padding: 20px;
     border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-.search-bar .form-group {
+.search-form .form-group {
     margin-right: 20px;
 }
 
-.search-bar .form-group label {
+.search-form .form-group label {
     display: block;
     font-weight: bold;
+    margin-bottom: 5px;
 }
 
-.search-bar .form-group input {
+.search-form .form-group input {
     padding: 10px;
     width: 150px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
 }
 
 .search-btn {
@@ -94,21 +97,25 @@ header nav ul li a.sell-ticket {
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    font-weight: bold;
 }
 
 .ticket-list {
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
     padding: 20px;
 }
 
 .ticket-card {
     background-color: #00aaff;
     color: #fff;
-    width: 150px;
+    width: 200px;
     padding: 20px;
     text-align: center;
     border-radius: 10px;
+    margin: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .ticket-card .date {
@@ -122,12 +129,10 @@ header nav ul li a.sell-ticket {
     margin-bottom: 10px;
 }
 
-.ticket-card .price {
-    font-size: 18px;
+.ticket-card .time,
+.ticket-card .price,
+.ticket-card .duration {
+    margin-bottom: 5px;
+    font-size: 16px;
     font-weight: bold;
-    margin-bottom: 10px;
-}
-
-.ticket-card .published {
-    font-size: 12px;
 }
