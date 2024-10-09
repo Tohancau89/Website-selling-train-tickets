@@ -22,8 +22,17 @@
     <link rel="stylesheet" href="https://ak-s.tripcdn.com/modules/trainpal/tt-web-site-trainpal-application/_next/static/css/aa5410e5b144bb19.css" data-precedence="next">
     <link rel="stylesheet" href="https://ak-s.tripcdn.com/modules/trainpal/tt-web-site-trainpal-application/_next/static/css/d960fde5a1bce2f0.css" data-precedence="next">
     <link rel="stylesheet" href="https://ak-s.tripcdn.com/modules/trainpal/tt-web-site-trainpal-application/_next/static/css/ed01d690bc5f4ca8.css" data-precedence="next">
+    <style>
+        .PcContinueBtn {
+            transition: background-color 0.3s;
+        }
+        .PcContinueBtn.enabled {
+            background-color: #3399FF;
+            cursor: pointer;
+        }
+    </style>
 </head>
-<body>
+<body class="trainpal online">
     <div class="tabley:pb-99 laptop:pb-0">
         <div class="pc-head dark z-30 relative">
             <div class="header-container">
@@ -32,6 +41,13 @@
                         <a href="HomePages.html" title="Cheap Train Tickets Booking | TrainPal">
                             <img height="70" width="200" src="Remove-bg.ai_1728193891250.png" alt="logo">
                         </a>
+                        <div class="nav-box">
+                            <div class="nav-profile">
+                                <div class="rel">
+                                    <button type="button" class="tp-btn dark sign-in-btn  filled" aria-label="aria label">Sign in</button>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </header>
             </div>
@@ -119,9 +135,61 @@
                             </div>
                             <div class="bg-smtcColorBgPage md:overflow-hidden tp-rounded-t-8">
                                 <div class="two-row-stack">  
+                                    <div class="left-search-list">
                                         <div class="double-row-bg overflow-hidden">
                                             <div class="mx-h5-m-24-16 tablet:mx-0 md:mb-8 mt-12 mt doubleRow">
-                                                <div class="JourneyCard_container rounded-h5-Radius-16-20 tablet:rounded-8">
+                                                <div class="JourneyCard_container rounded-h5-Radius-16-20 tablet:rounded-8" style="margin-bottom: 20px; border: 2px solid #ccc;" onclick="updateTotal(100000)">
+                                                        <div class="transition tablet:p-16 trip-list-shadow z-10 relative rounded-train-card cursor-pointer CardHover">
+                                                            <div class="flex items-baseline relative pt-12 tablet:pt-10 mx-h5-m-12-16 tablet:mx-0 justify-between">
+                                                                <div class="flex">
+                                                                    <ul class="flex">
+                                                                        <li class="w-104 w-list tablet:w-160 flex-none">
+                                                                            <div class="text-20 leading-h5-smtcTypographyDigit1 tablet:leading-24 font-number-600 text-smtcColorTextPrimary flex items-center justify-between">
+                                                                                "7:30"
+                                                                                <div><img src=""></div>
+                                                                            </div>
+                                                                            <p class="text-13 tablet:text-14 leading-h5-smtcTypographyCaption1 tablet:leading-17 mt-2 tablet:mt-4 text-smtcColorTextPrimary" > On Time</p>
+                                                                            <p class="text-13 tablet:text-14 leading-h5-smtcTypographyCaption1 tablet:leading-17 mt-2 tablet:mt-4 text-smtcColorTextTertiary tablet:last:max-w-146"> Phenikaa</p>                                                                     
+                                                                        </li>
+                                                                        <li class="w-104 w-list tablet:w-160 flex-none">
+                                                                            <div class="text-20 leading-h5-smtcTypographyDigit1 tablet:leading-24 font-number-600 text-smtcColorTextPrimary flex items-center justify-between">
+                                                                                "12:10"
+                                                                                <div><img src=""></div>
+                                                                            </div>
+                                                                            <p class="text-13 tablet:text-14 leading-h5-smtcTypographyCaption1 tablet:leading-17 mt-2 tablet:mt-4 text-smtcColorTextPrimary" > On Time</p>
+                                                                            <p class="text-13 tablet:text-14 leading-h5-smtcTypographyCaption1 tablet:leading-17 mt-2 tablet:mt-4 text-smtcColorTextTertiary tablet:last:max-w-146"> Home</p>                                                                     
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                                <div class="flex justify-end flex-none tablet:ml-12">
+                                                                    <ul class="relative">
+                                                                        <li class="flex justify-end items-center relative" onclick="updateTotal(100000)">
+                                                                            <p>
+                                                                                100.000vnd
+                                                                            </p>
+                                                                        </li>
+                                                                        <li class="flex justify-end">
+                                                                            <div class="flex items-center px-6 bg-smtcColorBgBrandFilled bg-opacity-10 mt-2 listLabel">
+                                                                                <p class="small-blue">
+                                                                                    Tiết kiệm 30.000
+                                                                                </p>
+                                                                            </div>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                                <div class="flex justify-end flex-none tablet:ml-12">
+
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="flex items-center text-14 leading-18 text-smtcColorTextPrimary">
+                                                            <strong class="text-15 leading-19 ml-4 font-bold">
+                                                                Sun, 06 Oct 2024
+                                                            </strong>
+                                                        </div>
+                                                        
+                                                </div>
+                                                <div class="JourneyCard_container rounded-h5-Radius-16-20 tablet:rounded-8"style="margin-bottom: 20px; border: 2px solid #ccc;" onclick="updateTotal(100000)">
                                                     <div class="transition tablet:p-16 trip-list-shadow z-10 relative rounded-train-card cursor-pointer CardHover">
                                                         <div class="flex items-baseline relative pt-12 tablet:pt-10 mx-h5-m-12-16 tablet:mx-0 justify-between">
                                                             <div class="flex">
@@ -170,6 +238,66 @@
                                                             Sun, 06 Oct 2024
                                                         </strong>
                                                     </div>
+                                                    
+                                            </div>
+                                            <div class="JourneyCard_container rounded-h5-Radius-16-20 tablet:rounded-8" style="margin-bottom: 20px; border: 2px solid #ccc;" onclick="updateTotal(100000)">
+                                                <div class="transition tablet:p-16 trip-list-shadow z-10 relative rounded-train-card cursor-pointer CardHover">
+                                                    <div class="flex items-baseline relative pt-12 tablet:pt-10 mx-h5-m-12-16 tablet:mx-0 justify-between">
+                                                        <div class="flex">
+                                                            <ul class="flex">
+                                                                <li class="w-104 w-list tablet:w-160 flex-none">
+                                                                    <div class="text-20 leading-h5-smtcTypographyDigit1 tablet:leading-24 font-number-600 text-smtcColorTextPrimary flex items-center justify-between">
+                                                                        "7:30"
+                                                                        <div><img src=""></div>
+                                                                    </div>
+                                                                    <p class="text-13 tablet:text-14 leading-h5-smtcTypographyCaption1 tablet:leading-17 mt-2 tablet:mt-4 text-smtcColorTextPrimary" > On Time</p>
+                                                                    <p class="text-13 tablet:text-14 leading-h5-smtcTypographyCaption1 tablet:leading-17 mt-2 tablet:mt-4 text-smtcColorTextTertiary tablet:last:max-w-146"> Phenikaa</p>                                                                     
+                                                                </li>
+                                                                <li class="w-104 w-list tablet:w-160 flex-none">
+                                                                    <div class="text-20 leading-h5-smtcTypographyDigit1 tablet:leading-24 font-number-600 text-smtcColorTextPrimary flex items-center justify-between">
+                                                                        "12:10"
+                                                                        <div><img src=""></div>
+                                                                    </div>
+                                                                    <p class="text-13 tablet:text-14 leading-h5-smtcTypographyCaption1 tablet:leading-17 mt-2 tablet:mt-4 text-smtcColorTextPrimary" > On Time</p>
+                                                                    <p class="text-13 tablet:text-14 leading-h5-smtcTypographyCaption1 tablet:leading-17 mt-2 tablet:mt-4 text-smtcColorTextTertiary tablet:last:max-w-146"> Home</p>                                                                     
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="flex justify-end flex-none tablet:ml-12">
+                                                            <ul class="relative">
+                                                                <li class="flex justify-end items-center relative">
+                                                                    <p>
+                                                                        100.000vnd
+                                                                    </p>
+                                                                </li>
+                                                                <li class="flex justify-end">
+                                                                    <div class="flex items-center px-6 bg-smtcColorBgBrandFilled bg-opacity-10 mt-2 listLabel">
+                                                                        <p class="small-blue">
+                                                                            Tiết kiệm 30.000
+                                                                        </p>
+                                                                    </div>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="flex justify-end flex-none tablet:ml-12">
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="flex items-center text-14 leading-18 text-smtcColorTextPrimary">
+                                                    <strong class="text-15 leading-19 ml-4 font-bold">
+                                                        Sun, 06 Oct 2024
+                                                    </strong>
+                                                </div>
+                                                
+                                            </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="right-search-list">
+                                        <div class="double-row-bg overflow-hidden">
+                                            <div class="p-20 flex items-center text-16 leading-19 text-smtcColorTextPrimary">
+                                                <i class="iconfont mr-8">+</i><strong class="font-500">Add Return</strong>
                                             </div>
                                         </div>
                                     </div>
@@ -185,14 +313,14 @@
                                     <ul class="flex justify-between text-smtcColorTextPrimary">
                                         <li class="font-700 text-20 leading-24 mt-2 mr-12">Total</li>
                                         <li class="text-24 leading-28 flex justify-end items-center flex-wrap-reverse">
-                                            <span class="ml-4 font-number-600">0.00</span>
+                                            <span id="total-amount" class="ml-4 font-number-600">0.00</span>
                                         </li>
                                     </ul>
                                     <ul class="text-14 mt-8 mb-20"></ul>
-                                    <div class="PcContinueBtn rounded-pc-Radius-4-8 transition flex justify-center items-center font-bold cursor-not-allowed bg-smtcColorBgDisabledFilled text-smtcColorTextTertiary">Continue</div>
+                                    <div id="continue-btn" class="PcContinueBtn rounded-pc-Radius-4-8 transition flex justify-center items-center font-bold cursor-not-allowed bg-smtcColorBgDisabledFilled text-smtcColorTextTertiary PcContinueBtn ">Continue</div>
                                     <div class="flex mt-20">
                                         <i class="iconfont user before:text-16 leading-16 text-smtcColorTextSecondary"></i>
-                                        <span class="text-14 leading-18 text-smtcColorTextSecondary flex items-center ml-6">1 adult</span>
+                                        <span class="PcContinueBtn disabled text-14 leading-18 text-smtcColorTextSecondary flex items-center ml-6">1 adult</span>
                                     </div>
                                 </div>
                             </div>
@@ -201,9 +329,26 @@
                 </div>
             </div>
         </div>
-        </div>
+        
     </div>
 
-   
+    <script>
+        let total = 0;
+
+function updateTotal(amount) {
+    total += amount;
+    document.getElementById("total-amount").innerText = total.toLocaleString();
+
+    // Enable continue button and change its color
+    const continueBtn = document.getElementById("continue-btn");
+    continueBtn.classList.remove("disabled");
+    continueBtn.classList.add("enabled");
+
+    // Enable button click
+    continueBtn.onclick = function() {
+        alert("Proceeding to checkout!");
+    };
+}
+    </script>
 </body>
 </html>
