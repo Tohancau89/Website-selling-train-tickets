@@ -11,6 +11,6 @@ let total = 0;
 
         // Enable button click
         continueBtn.onclick = function() {
-            alert("Proceeding to checkout!");
+            window.location.href = "checkout.html";
         };
     }
